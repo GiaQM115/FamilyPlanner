@@ -21,13 +21,13 @@ int main(int argc, char** argv) {
 
 	setDate(today);
 
-	addUser("Gia\0",users[0]);
-
-	printf("Welcome to the Planner\n");
-	printf("The date is %d/%d/%d, month of %s\n", today->month, today->day, today->year, today->monthName);
-	printf("There are %d users:\n\t%s\n",numUsers,users[0]->name);
+	drawMain("Mule Family");
 
 	free(today);
+	for(int i = 0; i < numUsers; i++) {
+		free(users[i]);
+	}	
+	free(users);
 
 	return EXIT_SUCCESS;
 	

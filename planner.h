@@ -45,4 +45,13 @@ void setDate(Date* d);
  * 		does not initiliaze users Events list
  */
 void addUser(char* n, User* u);
+
+/**
+ * name:	drawMain
+ * params:	char* fam
+ * returns:	none
+ * func:	draws main scene graphics 
+ */
+void drawMain(char* fam);
+
 #endif // PLANNER_H
