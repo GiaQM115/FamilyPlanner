@@ -26,9 +26,12 @@ typedef struct User {
 	Event* Events;
 } User;
 
-char* Months[12] = 	{"January", "February", "March",
-			"April", "May", "June", "July",
-			"August", "September", "October"
-			"November", "December"};
+/**
+ * name:	setDate
+ * params:	Date* d
+ * returns:	none
+ * func:	sets all Date fields to todays date
+ */
+void setDate(Date* d);
 
 #endif // PLANNER_H
