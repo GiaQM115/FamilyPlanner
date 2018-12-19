@@ -26,6 +26,9 @@ typedef struct User {
 	Event* Events;
 } User;
 
+int numUsers;
+User** users;
+
 /**
  * name:	setDate
  * params:	Date* d
@@ -34,4 +37,12 @@ typedef struct User {
  */
 void setDate(Date* d);
 
+/**
+ * name:	addUser
+ * params:	char* name, User* u
+ * returns:	none
+ * func:	creates a new user in pointer u with name name
+ * 		does not initiliaze users Events list
+ */
+void addUser(char* n, User* u);
 #endif // PLANNER_H

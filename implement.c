@@ -7,10 +7,10 @@
 #include <time.h>
 #include "planner.h"
 
-char* Months[12] = {"January", "February", "March",
-		"April", "May", "June", "July",
-		"August", "September", "October",
-		"November", "December"};
+char* Months[12] = { "January", "Februry", "March",
+		"April", "May", "June",
+		"July","August", "September",
+		"October", "November", "December"};
 
 // name:	setDate
 void setDate(Date* d) {
@@ -25,4 +25,9 @@ void setDate(Date* d) {
 	return;
 }
 
-
+// name:	addUser
+void addUser(char* n, User* u) {
+	u->name = n;
+	numUsers++;
+	return;
+}
